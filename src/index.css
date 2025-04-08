@@ -116,3 +116,23 @@ body {
 .about-container p, .contact-container p {
   font-size: 18px;
 }
+.top-banner {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+}
+
+.profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.welcome-text {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
