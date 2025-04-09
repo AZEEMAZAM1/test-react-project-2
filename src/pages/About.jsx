@@ -31,11 +31,11 @@ const About = () => {
       <section className="about-section">
         <h2>Skills</h2>
         <ul>
-          <ul>✅ Experience with:
+          <ul>Experience with:
           Expo, React Navigation, AsyncStorage, and integrating REST APIs and Firebase in mobile apps.</ul>
-          <ul>✅ Strong understanding of:
+          <ul>Strong understanding of:
           Component-based architecture, state management (using React Hooks and Context API), and mobile UI/UX design principles.</ul>
-          <ul>✅ Excellent problem-solving and debugging skills:
+          <ul>Excellent problem-solving and debugging skills:
           Skilled at using React Native Debugger, Chrome DevTools, and console logging to efficiently trace and resolve runtime errors and UI glitches.</ul>
         </ul>
       </section>
