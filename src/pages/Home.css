@@ -1,28 +1,71 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Home Container */
 .home-container {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  overflow-y: auto; /* Enable vertical scrolling */
-  height: 100vh; /* Full viewport height */
 }
 
+/* Header Section */
+.home-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.home-header h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.home-header p {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+.search-bar {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.search-bar:focus {
+  box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+  border-color: #2980b9;
+}
+
+/* Card Container */
 .card-container {
   display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap to the next row */
-  gap: 20px; /* Add space between cards */
-  justify-content: center; /* Center the cards */
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
+/* Individual Cards */
 .card {
-  background-color: #f9f9f9;
+  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
   width: 300px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-decoration: none; /* Remove underline from Link */
-  color: inherit; /* Inherit text color */
+  text-decoration: none;
+  color: inherit;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -31,9 +74,23 @@
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.home-title {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: bold;
+.card h3 {
+  font-size: 1.5rem;
+  color: #34495e;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
 }

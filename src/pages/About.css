@@ -1,4 +1,4 @@
-.about-container {
+/* .about-container {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
@@ -29,4 +29,74 @@
   .about-section ul {
     list-style-type: disc;
     padding-left: 20px;
+  } */
+
+  /* General Container Styling */
+.about-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto; /* Center the container horizontally */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  text-align: left; /* Change to 'center' if you want to center-align the text */
+}
+
+/* Heading Styling */
+.about-container h1 {
+  text-align: center; /* Center-align the main heading */
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+/* Paragraph and List Styling */
+.about-section p,
+.about-section ul {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about-section ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding-left: 0;
+}
+
+.about-section ul ul {
+  margin-bottom: 10px;
+  padding-left: 20px; /* Indent nested lists */
+  position: relative;
+}
+
+.about-section ul ul::before {
+  content: '✅'; /* Add a checkmark before each list item */
+  position: absolute;
+  left: -20px;
+  color: #27ae60; /* Green color for the checkmark */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 10px;
   }
+
+  .about-container h1 {
+    font-size: 2rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-section p,
+  .about-section ul {
+    font-size: 0.9rem;
+  }
+}
